@@ -7,16 +7,14 @@
             "src": "/(.*)",
             "status": 404,
             "dest": "/error/404.html"
-        }
-    ],
-    "rewrites": [
-        {
-            "source": "/win7/(.*)",
-            "destination": "/Windows 7/"
         },
         {
-            "source": "/win10/(.*)",
-            "destination": "/Windows 10/"
+            "src": "/win7/(.*)",
+            "dest": "/Windows 7/"
+        },
+        {
+            "src": "/win10/(.*)",
+            "dest": "/Windows 10/"
         }
     ]
 }
