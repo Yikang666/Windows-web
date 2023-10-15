@@ -10,11 +10,11 @@
         },
         {
             "src": "/win7/(.*)",
-            "dest": "/Windows 7/"
+            "dest": "/Windows 7/(.*)"
         },
         {
             "src": "/win10/(.*)",
-            "dest": "/Windows 10/"
+            "dest": "/Windows 10/(.*)"
         }
     ]
 }
