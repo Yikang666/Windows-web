@@ -7,14 +7,6 @@
             "src": "/(.*)",
             "status": 404,
             "dest": "/error/404.html"
-        },
-        {
-            "src": "/win7/(.*)",
-            "dest": "/Windows 7/(.*)"
-        },
-        {
-            "src": "/win10/(.*)",
-            "dest": "/Windows 10/(.*)"
         }
     ]
 }
