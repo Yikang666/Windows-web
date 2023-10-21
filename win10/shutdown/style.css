@@ -1,11 +1,11 @@
 @font-face {
     font-family: "YaHei";
-    src: url("/win10/shutdown//res/font.ttf");
-    src: url("/win10/shutdown/font.eot") format("embedded-opentype"),
-        url("/win10/shutdown/font.woff2") format("woff2"),
-        url("/win10/shutdown/font.woff") format("woff"),
-        url("/win10/shutdown/font.ttf") format("truetype"),
-        url("/win10/shutdown/font.svg") format("svg");
+    src: url("./res/font.ttf");
+    src: url("./res/font.eot") format("embedded-opentype"),
+        url("./res/font.woff2") format("woff2"),
+        url("./res/font.woff") format("woff"),
+        url("./res/font.ttf") format("truetype"),
+        url("./res/font.svg") format("svg");
 }
 
 :root {
