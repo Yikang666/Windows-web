@@ -1,12 +1,9 @@
 {
-    "routes": [
+    "redirects": [
         {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "status": 404,
-            "dest": "/error/404.html"
+            "source": "/(.*)",
+            "destination": "./error/404.html",
+            "statusCode": 404
         }
     ]
 }
