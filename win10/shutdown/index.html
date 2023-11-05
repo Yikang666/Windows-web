@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>正在关机</title>
-    <link href="./style.css" rel="stylesheet" />
     <link href="/css/main.css" rel="stylesheet" />
 
     <style>
       @font-face {
-        font-family: "YaHei";
+        font-family: "Microsoft YaHei", "YaHei";
         src: url("./res/font.ttf");
         src:
           url("./res/font.woff2") format("woff2"),
@@ -18,7 +17,7 @@
       }
 
       :root {
-        --size: 4.5rem;
+        --size: 4.3rem;
         --dot-size: 6px;
         --dot-count: 6;
         --color: #fff;
@@ -26,6 +25,10 @@
         --spread: 60deg;
         cursor: default;
         background-color: #005a9e;
+      }
+
+      .center {
+        transform: translate(-50%, -35%);
       }
 
       .container {
