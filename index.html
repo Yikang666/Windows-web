@@ -6,13 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Windows 系统模拟</title>
     <link href="/css/main.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="center">
-      <div class="btn-group">
-        <a class="btn" href="./win10">Windows 10</a>
-        <a class="btn" href="./win7">Windows 7</a>
+    <div id="app" class="container">
+      <div class="left-box">
+        <div class="ul">
+          <router-link to="/win">
+            <div class="li item active">Windows</div>
+          </router-link>
+          <router-link to="/mac">
+            <div class="li item">MacOS</div>
+          </router-link>
+          <router-link to="/android">
+            <div class="li item">Android</div>
+          </router-link>
+          <router-link to="/ios">
+            <div class="li item">iOS</div>
+          </router-link>
+          <hr />
+          <router-link to="/about">
+            <div class="li item">关于</div>
+          </router-link>
+        </ul>
       </div>
     </div>
+    <router-view></router-view>
   </body>
+  <script src="//cdn.staticfile.org/vue/3.3.8/vue.global.min.js"></script>
+  <script src="//cdn.staticfile.org/vue-router/4.2.5/vue-router.global.min.js"></script>
+  <script src="/js/index.vue.js"></script>
+  <script>
+    let items = document.querySelectorAll(".item");
+
+    function setActive() {
+      items.forEach((item) => {
+        item.classList.remove("active");
+      });
+      this.classList.add("active");
+    }
+
+    items.forEach((item) => {
+      item.addEventListener("click", setActive);
+    });
+  </script>
 </html>

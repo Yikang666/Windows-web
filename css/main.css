@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .center {
   position: absolute;
   left: 50%;
@@ -9,7 +14,7 @@
   display: inline-block;
   padding: 0.5rem 0.75rem;
   color: #0d6efd;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #0d6efd;
   border-radius: 5px;
   text-align: center;
